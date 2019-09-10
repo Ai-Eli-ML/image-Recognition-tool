@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "@tensorflow/tfjs": "^1.2.8",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.14.7",
     "tensorflow": "^0.7.0"
   },
   "name": "tensorflow-code",
