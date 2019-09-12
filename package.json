@@ -4,10 +4,11 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.14.7",
-    "tensorflow": "^0.7.0"
+    "tensorflow": "^0.7.0",
+    "uuid": "^3.3.3"
   },
-  "name": "tensorflow-code",
-  "version": "1.0.2",
+  "name": "transferlearning",
+  "version": "1.0.1",
   "scripts": {
     "presubmit": "ts-node presubmit.ts"
   },
@@ -16,6 +17,7 @@
     "@types/shelljs": "~0.8.0",
     "fs": "~0.0.1-security",
     "jasmine": "~3.1.0",
+    "nodemon": "^1.19.2",
     "shelljs": "0.8.2",
     "ts-node": "~5.0.0",
     "tslint": "~5.13.0",
@@ -23,12 +25,20 @@
     "typescript": "3.3.3333",
     "yalc": "~1.0.0-pre.21"
   },
-  "license": "Apache-2.0",
+  "license": "GPL-3.0",
   "description": "This repository contains a set of examples implemented in [TensorFlow.js](http://js.tensorflow.org).",
   "main": "index.js",
   "keywords": [
     "tf",
     "poretfolio"
   ],
-  "author": "Elijah Brown"
+  "author": "Elijah Brown",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Al-Jarah/image-Recognition-tool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Al-Jarah/image-Recognition-tool/issues"
+  },
+  "homepage": "https://github.com/Al-Jarah/image-Recognition-tool#readme"
 }

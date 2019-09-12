@@ -1,3 +1,6 @@
+/*jshint esversion: 8 */
+// const http = require('http');
+// const bootstrap = require("bootstrap");
 const webcamElement = document.getElementById("webcam");
 const classifier = knnClassifier.create();
 
@@ -60,25 +63,26 @@ async function app() {
     .addEventListener("click", () => addExample(2));
 
   while (true) {
-    const result = await net.classify(webcamElement);
+    if (classifier.getNumClasses() > 0) {
+      // Get the activation from mobilenet from the webcam.
+      const activation = net.infer(webcamElement, "conv_preds");
+      // Get the most likely class and confidences from the classifier module.
+      const result = await classifier.predictClass(activation);
 
-    document.getElementById("console").innerText = `
-      style:
-      prediction: ${result[0].className}\n
-      probability: ${result[0].probability}
-    `;
-
-    // Give some breathing room by waiting for the next animation frame to
-    // fire.
+      const classes = ["A", "B", "C"];
+      document.getElementById("console").innerText = `
+        prediction: ${classes[result.classIndex]}\n
+        probability: ${result.confidences[result.classIndex]}
+      `;
+    }
     await tf.nextFrame();
   }
 }
 
 app();
 
-// const videoBox = () =>{
-// let my_class = document.createAttribute('class');
-// let my_floatingBox = document.getElementsByTagName('video')
-
-// floatingBox.append
-
+// http
+//   .createServer((req, res) =>{
+//   res.end();
+//   })
+// .listen(5000, () => console.log('Server running...'));
