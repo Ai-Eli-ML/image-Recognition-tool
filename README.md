@@ -1,2 +1,2 @@
-# image-Recognition-tool
-uses webcam to classify images
+# Ai
+Uses webcam to predict things
