@@ -1,9 +1,9 @@
 {
   "dependencies": {
-    "@tensorflow/tfjs": "^1.2.8",
+    "@tensorflow/tfjs": "^1.2.9",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
-    "popper.js": "^1.14.7",
+    "popper.js": "^1.15.0",
     "tensorflow": "^0.7.0",
     "uuid": "^3.3.3"
   },
@@ -22,11 +22,11 @@
     "ts-node": "~5.0.0",
     "tslint": "~5.13.0",
     "tslint-no-circular-imports": "~0.6.1",
-    "typescript": "3.3.3333",
+    "typescript": "3.6.3",
     "yalc": "~1.0.0-pre.21"
   },
   "license": "GPL-3.0",
-  "description": "This repository contains a set of examples implemented in [TensorFlow.js](http://js.tensorflow.org).",
+  "description": "This repository contains an application that lets you train an Ai with your onw images",
   "main": "index.js",
   "keywords": [
     "tf",
