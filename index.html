@@ -24,13 +24,15 @@
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     <h1 class="display-4">Image Classification Ai</h1>
     <video autoplay playsinline muted id="webcam" style="height: 225px; width: 100%; display: block;"></video>
-    <p class="lead">Quickly train an Ai to guess your own images.</p>
+    <p class="lead">Quickly train an Ai to learn your own images.</p>
     <p class="lead">Assign an image to the Ai button by clicking it once you're in the position you want to train the Ai
       on</p>
   </div>
   <div id="console"></div>
   <div class="container">
+    <!-- Cards to display image -->
     <div class="card-deck mb-3 text-center">
+      <!-- Card to display image A -->
       <div class="card mb-4 box-shadow">
         <div class="card-header">
           <h4 class="my-0 font-weight-normal">DATA</h4>
@@ -40,9 +42,11 @@
           <h3 class="mt-3 mb-4"> <img style="height: 225px; width: 100%; display: block;">
             <!--code to stor image goes here-->
           </h3>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary class-a">Train Ai</button>
+          <button type="button" class="btn btn-lg btn-block btn-primary class-a">Train Ai</button>
         </div>
-      </div>
+      </div> <!-- Card to display image end-->
+
+      <!-- Card to display image B -->
       <div class="card mb-4 box-shadow">
         <div class="card-header">
           <h4 class="my-0 font-weight-normal">DATA</h4>
@@ -52,21 +56,24 @@
           <h3 class="mt-3 mb-4"> <img style="height: 225px; width: 100%; display: block;">
             <!--code to stor image goes here-->
           </h3>
-          <button type="button" class="btn btn-lg btn-block btn-primary class-b">Train Ai</button>
+          <button type="button" class="btn btn-lg btn-block btn-outline-primary class-b">Train Ai</button>
         </div>
-      </div>
+      </div> <!-- Card to display image end-->
+
+      <!-- Card  to display image C -->
       <div class="card mb-4 box-shadow">
         <div class="card-header">
           <h4 class="my-0 font-weight-normal">DATA</h4>
         </div>
         <div class="card-body">
           <h1 class="card-title pricing-card-title">image <small class="text-muted">/ #3</small></h1>
-          <h3 class="mt-3 mb-4"> <img style="height: 225px; width: 100%; display: block;">
-            <!--code to stor image goes here-->
+          <h3 class="mt-3 mb-4"> <img class=" " style="height: 225px; width: 100%; display: block;">
+            <!--code to store image goes here-->
           </h3>
           <button type="button" class="btn btn-lg btn-block btn-primary class-c">Train Ai</button>
         </div>
-      </div>
+      </div> <!-- Card to display image end-->
+
     </div>
 
 
@@ -82,126 +89,3 @@
 </body>
 
 </html>
-
-<!-- <body>
-
-
-  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 class="display-4">Pricing</h1>
-    <video autoplay playsinline muted id="webcam"></video>
-    <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example.
-      It's built with default Bootstrap components and utilities with little customization.</p>
-  </div>
-
-  <div class="container">
-    <div class="card-deck mb-3 text-center">
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Free</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>10 users included</li>
-            <li>2 GB of storage</li>
-            <li>Email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-        </div>
-      </div>
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Pro</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>20 users included</li>
-            <li>10 GB of storage</li>
-            <li>Priority email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-        </div>
-      </div>
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Enterprise</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>30 users included</li>
-            <li>15 GB of storage</li>
-            <li>Phone and email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
-        </div>
-      </div>
-    </div>
-
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
-      <div class="row">
-        <div class="col-12 col-md">
-          <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="24"
-            height="24">
-          <small class="d-block mb-3 text-muted">© 2017-2018</small>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Features</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Cool stuff</a></li>
-            <li><a class="text-muted" href="#">Random feature</a></li>
-            <li><a class="text-muted" href="#">Team feature</a></li>
-            <li><a class="text-muted" href="#">Stuff for developers</a></li>
-            <li><a class="text-muted" href="#">Another one</a></li>
-            <li><a class="text-muted" href="#">Last time</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Resource</a></li>
-            <li><a class="text-muted" href="#">Resource name</a></li>
-            <li><a class="text-muted" href="#">Another resource</a></li>
-            <li><a class="text-muted" href="#">Final resource</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>About</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Team</a></li>
-            <li><a class="text-muted" href="#">Locations</a></li>
-            <li><a class="text-muted" href="#">Privacy</a></li>
-            <li><a class="text-muted" href="#">Terms</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script>
-    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
-  </script>
-  <script src="../../assets/js/vendor/popper.min.js"></script>
-  <script src="../../dist/js/bootstrap.min.js"></script>
-  <script src="../../assets/js/vendor/holder.min.js"></script>
-  <script>
-    Holder.addTheme('thumb', {
-      bg: '#55595c',
-      fg: '#eceeef',
-      text: 'Thumbnail'
-    });
-  </script>
-
-
-</body> -->
