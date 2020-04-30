@@ -2,7 +2,7 @@
   "dependencies": {
     "@tensorflow/tfjs": "^1.2.9",
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.15.0",
     "tensorflow": "^0.7.0",
     "uuid": "^3.3.3"
